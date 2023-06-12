@@ -1,0 +1,130 @@
+/*1st No.8 CSS*/
+body {
+  background-color: #F5F6F8;　/*グレー*/
+  font-size: 16px;
+  color: #333; /*フォントの色　*/
+  margin: 0; /* 四辺すべてに適用 */
+}
+
+h1,h2,h3,h4,h5 {
+  margin: 0 0 10px 0; /* 上 | 右 | 下 | 左 */
+  padding: 0; /* 四辺すべてに適用 */
+}
+
+
+/* headerセクション */
+header {
+  background-color: #ffffff;
+  display: flex; /*要素を並列にする　*/
+  justify-content: space-between; /* 各アイテムを均等配置 先頭＆末尾*/
+  align-items: center; /* アイテムを中央付近にまとめる */
+  /* 全ての要素を集合とし、配置位置を決める */
+  box-shadow: -5px -5px 15px 5px rgba(0, 90, 255, 0.8), 5px 5px 15px 7px rgba(0, 213, 83, 0.8);/*応用課題*/
+}
+
+
+.logo {
+  width: 200px; /*幅は200px*/
+  height: auto; /*高さは自動*/
+  margin-left: 5px;
+}
+
+.logo-img {
+  width: 100%; /*親となる包含ブロックの幅に対するパーセント値で定義*/
+}
+
+.header-navigation {
+  margin-right: 5px;
+  display: flex;
+}
+
+.header-navigation li {
+  padding: 0 30px; /* 上下 | 左右 */
+  text-align: center; /*テキストの水平方向の配置*/
+  list-style-type: none; /*リスト項目要素のマーカーを設定*/
+}
+
+.header-navigation li a {
+  color: #333;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none; /*テキストの装飾的な線の表示を設定*/
+}
+
+.header-navigation-list:hover{ /*応用課題*/
+  opacity: 0.6;
+}
+
+.container {
+  width: 870px;
+  height: auto;
+  margin: 40px auto; /* 上下 | 左右 */
+}
+
+.text-title {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.card-contents {
+  padding: 22px 32px;
+  display: block; /*ブロックを改行する（縦積み）*/
+  margin: 30px 0; /* 上下 | 左右 */
+  background-color: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);/*応用課題*/
+  border-radius: 15px; /*応用課題*/
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.information-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.information-list li {
+  margin-bottom: 10px;
+}
+
+.user-items {
+  margin-top: 32px;
+  display: flex; /*要素を並列にする　*/
+  justify-content: flex-start; /* フレックスアイテムを先頭に寄せる */
+  flex-wrap: wrap; /*折り返しを許可する*/
+}
+
+.user-items .item {
+  margin-bottom: 24px;
+  margin-right: 48px;
+  text-align: center;
+}
+
+.user-items .item img {
+  width: 150px;
+  height: 150px;
+}
+
+.profile-img:hover{
+   transform: scale(1.1, 1.1);
+}
+
+.user-items .item .username {
+  color: #818181;
+  margin: 10px auto;
+}
+
+footer {
+  background-color: #818181;
+  height: 100px;
+  display: flex;
+  justify-content: center; /*水平方向：中央*/
+  align-items: flex-end; /* 上下方向：フレックスアイテムを末尾にまとめる */
+}
+
+.copyright {
+  font-size: 12px;
+  color: #ffffff;
+}
